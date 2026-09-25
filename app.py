@@ -3,19 +3,8 @@ from components.sidebar import create_sidebar
 from screens import (home , z_factor, 
                     critical , converter , 
                    )
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-st.set_page_config(
-    page_title="PVT Toolkit",
-    page_icon="🛢️",
-    layout="wide"
-)
+
+
 
 selected = create_sidebar()
 
